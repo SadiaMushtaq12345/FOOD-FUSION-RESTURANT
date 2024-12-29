@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD FUSION - Restaurant Website</title>
+    <style>
+        body {
+            background-image: url('fav.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #002a2e;
+            color: white;
+            padding: 20px 0;
+			height: 60px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        header h2 {
+            margin: 0;
+			float: left;
+            margin-left: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: #004a4f;
+            margin-top: 20px;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .menu-item {
+            background-color: white;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .menu-info {
+            padding: 10px;
+        }
+
+        .menu-info h2 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #004a4f;
+        }
+
+        .menu-info .description {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .menu-info .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #004a4f;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #004a4f;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #007f7f;
+        }
+
+        footer {
+            background-color: #002a2e;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2 style="display: inline; margin-right: 40px;">Food Fusion</h2>
+    <nav>
+        <a href="mywebsitepage1.html">Home</a>
+        <a href="mywebsitepage2.html">About</a>
+        <a href="mywebsitepage3.html">Menu</a>
+        <a href="mywebsitepage4.html">Book Table</a>
+    </nav>
+</header>
+
+<h1><b>Menu and Pricing</b></h1>
+
+<section class="menu">
+    <div class="menu-item">
+        <img src="pizza.jpg" alt="Pizza Margherita">
+        <div class="menu-info">
+            <h2>Pizza Margherita</h2>
+            <p class="description">Classic Italian pizza with fresh tomatoes, mozzarella, and basil.</p>
+            <p class="price">Rs.2500</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="burger.jpeg" alt="Cheeseburger">
+        <div class="menu-info">
+            <h2>Cheeseburger</h2>
+            <p class="description">Juicy beef patty with melted cheese, lettuce, and tomato.</p>
+            <p class="price">Rs.3500</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="pasta.jpeg" alt="Spaghetti Carbonara">
+        <div class="menu-info">
+            <h2>Spaghetti Carbonara</h2>
+            <p class="description">Delicious spaghetti with creamy sauce, bacon, and Parmesan.</p>
+            <p class="price">Rs.1000</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="urban.jpeg" alt="Urban Bites">
+        <div class="menu-info">
+            <h2>Urban Bites</h2>
+            <p class="description">A modern twist on classic fast food - fresh, fast, and flavorful!</p>
+            <p class="price">Rs.2000</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="feast.jpeg" alt="Feast Wrap">
+        <div class="menu-info">
+            <h2>Feast Wrap</h2>
+            <p class="description">Korean BBQ chicken, and fresh pickled veggies!</p>
+            <p class="price">Rs.2000</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="spice.jpeg" alt="Spice-Edge Sliders">
+        <div class="menu-info">
+            <h2>Spice-Edge Sliders</h2>
+            <p class="description">Mini spicy lamb patties topped with mint yogurt and roasted peppers!</p>
+            <p class="price">Rs.1550</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+	
+	
+	
+	
+	<div class="menu-item">
+        <img src="tacos.jpeg" alt="Spice-Edge Sliders">
+        <div class="menu-info">
+            <h2>HeatWave Tacos</h2>
+            <p class="description">Spicy, grilled tacos filled with marinated meats, fresh salsas, and a kick of hot sauce</p>
+            <p class="price">Rs.2200</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+	
+	<div class="menu-item">
+        <img src="fry.jpeg" alt="Spice-Edge Sliders">
+        <div class="menu-info">
+            <h2>Fry-Fusion</h2>
+            <p class="description">Innovative, gourmet fries topped with bold flavors like truffle oil, parmesan, and spicy aioli.</p>
+            <p class="price">Rs.1200</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+	
+	
+	
+	
+	
+</section>
+
+<footer>
+    <p>&copy; 2024 Food Fusion Restaurant. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

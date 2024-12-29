@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD FUSION - Restaurant Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 22px;
+            padding: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        header h3 {
+            float: left;
+            margin-left: 10px;
+            color: white;
+        }
+
+        header {
+            background-color: #002a2e;
+            color: white;
+            padding: 20px 0;
+            height: 60px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 44px;
+            color: #004a4f;
+            margin-top: 50px;
+        }
+
+        .section {
+            background-image: url('fav.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-bottom: 40px;
+        }
+
+        .section2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .section2 form {
+            border: 1px solid black;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section2 input {
+            height: 50px;
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        button {
+            height: 40px;
+            width: 100%;
+            border: 1px solid;
+            border-radius: 25px;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: white;
+            color: green;
+        }
+
+        footer {
+            background-color: #002a2e;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px)
+		{
+            .section2 form {
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="section">
+        <header>
+            <h3 style="display: inline; margin-right: 40px;">Food Fusion</h3>
+            <nav>
+                <a href="mywebsitepage1.html">Home</a>
+                <a href="mywebsitepage2.html">About</a>
+                <a href="mywebsitepage3.html">Menu</a>
+                <a href="mywebsitepage4.html">Book table</a>
+            </nav>
+        </header>
+
+        <h1><b>Book A Table</b></h1>
+
+        <div class="section2">
+            <form onsubmit="return validateform()">
+                <input type="text" id="name" placeholder="Enter your full name" required><br>
+                <input type="tel" id="tel" placeholder="Enter your phone number" required><br>
+                <input type="email" id="email" placeholder="Enter your email" required><br>
+                <input type="date" id="date" required><br>
+                <input type="number" id="people" placeholder="Enter number of people" required><br>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Food Fusion Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function validateform() {
+            var name = document.getElementById('name').value;
+            var tel = document.getElementById('tel').value;
+            var email = document.getElementById('email').value;
+            var date = document.getElementById('date').value;
+            var people = document.getElementById('people').value;
+
+            if (name == "" || tel == "" || email == "" || date == "" || people == "") {
+                alert("Please complete all the fields.");
+                return false; // Prevent form submission if validation fails
+            } else {
+                alert("Form submitted successfully!");
+                return true; // Allow form submission
+            }
+        }
+    </script>
+
+</body>
+</html>
